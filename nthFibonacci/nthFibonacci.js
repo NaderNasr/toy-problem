@@ -9,7 +9,7 @@ How many pairs of iguanas will there be after n months?
 
 For example, the iguana pair size for months zero through five are:
 
-0 1 1 2 3 5 
+0 1 1 2 3 5
 
 If n were 4, your function should return 3; for 5, it should return 5.
 
@@ -24,6 +24,26 @@ DO NOT use a recursive solution to this problem. Your solution must run in linea
 */
 
 
-nthFibonacci = function(n) {  
- // your code here
+nthFibonacci = function(n) {
+
+
+     //define an array.
+     arr = [];
+
+     //define the first two fibonacci numbers.
+     arr[0]=0;
+     arr[1]=1;
+
+     //set the calculation below depending on which n is the fibonacci.
+     if (n>2)
+     {
+        //for (i=n; i<=2; i++)
+         for (i=2; i<=n; i++)
+         {
+             arr[i]=arr[i-1]+arr[i-2];
+         }
+     }
+     //reveal the nthFibonacci
+     console.log(arr[n]);
+
 };
