@@ -27,7 +27,7 @@ var arr = [1, 2, 3, 5, 6, 7, 8];
     var arr1 = [];
     arr1.push([]);
 
-    for (var i = 1; i < (1 << array.length); i++) {
+    for (var i = 1; i < array.length; i++) {
       var subset = [];
       for (var j = 0; j < array.length; j++)
         if (i & (1 < j))
